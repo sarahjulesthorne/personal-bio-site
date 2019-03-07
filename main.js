@@ -1,1 +1,54 @@
-console.log(`Hey there`);
+//console.log(`Hey there`);
+const projects = [
+    {
+title: 'HTML project',
+screenshot: '../image-test/2019-03-06.png',
+description: 'This project is an exercise in basic HTML. I created it to practice HTmL tags, and I did so by writing an HTmL document with various tags such as sections and headers.',
+technologiesUsed: 'HTML, CSS, vanilla JavaScript, version control with Github, Ubuntu terminal.',
+Available: true,
+url: 'www.github.com/sarahjulesthorne',
+githubURL: 'www.github.com/sarahjulesthorne',
+    },
+    {
+        title: 'CSS Project',
+        screenshot: '../image-test/2019-03-06.png',
+        description: 'This project is an exercise in styling using CSS. I created it to practice flexbox and color manipulation. I used various styles such as display, background-color, and flex-flow to reach my outcome.',
+        technologiesUsed: 'HTML, CSS, vanilla JavaScript, version control with Github, Ubuntu terminal.',
+        Available: false,
+        url: 'www.github.com/sarahjulesthorne',
+        githubURL: 'www.github.com/sarahjulesthorne',
+            },
+            {
+                title: 'JavaScript Project',
+                screenshot: '../image-test/2019-03-06.png',
+                description: 'This project is an exercise in JavaScript functions. I created it to practice looping, variables, and functions, etc. I reached my goal by practicing creating arrays, looping over them with for loops, and printing to the dom.',
+                technologiesUsed: 'HTML, CSS, vanilla JavaScript, version control with Github, Ubuntu terminal.',
+                Available: true,
+                url: 'www.github.com/sarahjulesthorne',
+                githubURL: 'www.github.com/sarahjulesthorne',
+                    },
+                    {
+                        title: 'Github Project',
+                        screenshot: '../image-test/2019-03-06.png',
+                        description: 'This project is an exercise in version control with Github. I created it to master repository basics in Github. I did so by creating, initializing, adding, commiting, and pushing repositories and files to Github. I also practiced branch creation and merging/pull requesting in the branches.',
+                        technologiesUsed: 'HTML, CSS, vanilla JavaScript, version control with Github, Ubuntu terminal.',
+                        Available: false,
+                        url: 'www.github.com/sarahjulesthorne',
+                        githubURL: 'www.github.com/sarahjulesthorne',
+                            },
+]
+
+const printToDom = (divId, textToPrint) => {
+const selectedDiv = document.getElementById(divId);
+selectedDiv.innerHTML = textToPrint;
+};
+// console.log(projects[1].title);
+// console.log(projects[3].url);
+// printToDom('projectsPage',  '<p>Hi?</p>');
+const createProjectCards = () => {
+
+};
+const init = () => {
+createProjectCards();
+};
+init();
