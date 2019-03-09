@@ -52,8 +52,8 @@ for (let i = 0; i < projects.length; i++) {
 domString += `</section class='project-card'>`;
 domString += `<h5 class='card-title'>${projects[i].title}</h5>`;
 domString += `<img src=${projects[i].screenshot} alt='screenshot of project page'/>`;
-domString += `<p>Project Description: ${projects[i].description}</p>`;
-domString += `<p>Technologies Used: ${projects[i].technologiesUsed}</p>`;
+domString += `<p><span class='italic-text'>Project Description</span>: ${projects[i].description}</p>`;
+domString += `<p><span class='italic-text'>Technologies Used</span>: ${projects[i].technologiesUsed}</p>`;
 domString += `<footer>`;
 domString += `<p>View the project <a href=projects[i].url>here</a></p>`;
 domString += `<p>View the project on Github <a href=projects[i].githubURL>here</a></p>`;
