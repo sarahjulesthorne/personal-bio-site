@@ -6,3 +6,30 @@
 body {
     background-color: lightblue;
 }
+.fullPage {
+    display: flex;
+    flex-flow: column no-wrap;
+}
+.full-page-title {
+    width: 100%;
+    text-align: center;
+}
+.card-container {
+    display: flex;
+    width: 100%;
+    flex-flow: row: wrap;
+    }
+.project-card {
+    display: flex;
+    flex-flow: column no-wrap;
+    width: 45%;
+    box-shadow: 10px 10px gray;
+
+}
+.card-title {
+    width: 100%;
+    text-align: center;
+}
+ .italic-text {
+     font-style: italic;
+ }   
