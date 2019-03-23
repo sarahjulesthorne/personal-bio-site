@@ -4,31 +4,40 @@
     box-sizing: border-box;
 }
 body {
+    display: flex;
     background-color: lightblue;
+    flex-flow: column nowrap;
 }
 .fullPage {
     display: flex;
-    flex-flow: column no-wrap;
+    flex-flow: column nowrap;
 }
-.full-page-title {
-    width: 100%;
+.padding {
+    padding: 1em;
+}
+.padding-vertical {
+    padding: 1em 0;
+}
+.title {
+    width: 100%
     text-align: center;
 }
+
 .card-container {
     display: flex;
     width: 100%;
-    flex-flow: row: wrap;
+    flex-flow: row wrap;
     }
 .project-card {
     display: flex;
-    flex-flow: column no-wrap;
+    flex-flow: column nowrap;
     width: 45%;
     box-shadow: 10px 10px gray;
-
 }
-.card-title {
+
+.project-card img {
     width: 100%;
-    text-align: center;
+    height: 300px;
 }
  .italic-text {
      font-style: italic;
