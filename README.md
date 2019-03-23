@@ -3,8 +3,8 @@
 This project is the first stage of a personal bio site. I used hard-coded HTML to form a nav bar with fake links, a list of sample (but not yet accurate) technologies, and a div for the project cards. I then built an array of fake projects in my JavaScript. I looped over that array, testing on each iteration to see if the `available` key tested as true. If so, the string-builder function printed that product's card.  
 ### Screenshots  
 ### Getting Started  
-![Screenshot of the top half of my personal bio site. Displays page title, paragraphs of bio text, and list of technologies learned.]()  
-![Screenshot of project cards. Display project title, image of example project, and information about the project.]()  
+![Screenshot of the top half of my personal bio site. Displays page title, paragraphs of bio text, and list of technologies learned.](https://raw.githubusercontent.com/sarahjulesthorne/personal-bio-site/master/images/2019-03-23%20(1).png "Screenshot of top half of page on pageload in browser")  
+![Screenshot of project cards. Display project title, image of example project, and information about the project.](https://raw.githubusercontent.com/sarahjulesthorne/personal-bio-site/master/images/2019-03-23%20(2).png "Screenshot of project cards")  
 Clone the project down:  
 ```  
 $ git clone url  
