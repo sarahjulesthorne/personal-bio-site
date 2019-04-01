@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     display: flex;
     background-color: lightblue;
@@ -47,4 +49,8 @@ body {
 
 .italic-text {
     font-style: italic;
+}
+
+.hide {
+    display: none;
 }
