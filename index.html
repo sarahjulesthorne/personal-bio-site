@@ -17,26 +17,19 @@
     <ul class="nav d-flex nav-pills flex-column flex-sm-row" id="navLinks">
         <h1 class='w-100 text-center'>Sarah Thorne</h1>
         <li class="nav-item">
-            <a class="flex-sm-fill text-sm-center nav-link active" href="#" id="navToBio">Bio</a>
+            <a class="bioPage flex-sm-fill text-sm-center nav-link" href="#" id="navToBio">Bio</a>
         </li>
         <li class="nav-item">
-            <a class="flex-sm-fill text-sm-center nav-link" href="#" id="navToTechnologies">Technologies</a>
+            <a class="technologiesPage flex-sm-fill text-sm-center nav-link" href="#"
+                id="navToTechnologies">Technologies</a>
         </li>
         <li class="nav-item">
-            <a class="flex-sm-fill text-sm-center nav-link" href="#" id="navToProjects">Projects</a>
+            <a class="projectsPage flex-sm-fill text-sm-center nav-link" href="#" id="navToProjects">Projects</a>
         </li>
     </ul>
 
-
-    <!-- <nav>
-        <ul id="navLinks">
-            <li class='padding'><a id="navToBio">Bio</a></li>
-            <li class='padding'><a id="navToTechnologies">Technologies</a></li>
-            <li class='padding'><a id="navToProjects">Projects</a></li>
-        </ul>
-    </nav> -->
-
-    <div class="fullPage padding" id="bioPage">
+    <!-- bio page container -->
+    <div class="fullPage padding hide" id="bioPage">
         <header>
             <h3 class="full-page-title padding-vertical title">Bio</h3>
         </header>
@@ -51,6 +44,9 @@
             about development--puzzle-solving, creativity, attention to detail, and instant gratification when the code
             finally runs.</p>
     </div>
+    <!-- End of bio page container -->
+
+    <!-- Technologies Page Container -->
     <div class="fullPage padding hide" id="technologiesPage">
         <header>
             <h3 class="full-page-title padding-vertical title">Technologies</h3>
@@ -62,18 +58,28 @@
             <li class='padding'>Bootstrap</li>
         </ul>
     </div>
-    <div class="fullPage projects-page-div padding hide" id="projectsPage">
+    <!-- End of technologies page -->
+
+    <!-- Projects Page Container -->
+    <div class="fullPage projects-page-div padding" id="projectsPage">
         <header>
             <h3 class="full-page-title padding-vertical title">Projects</h3>
         </header>
+        <!-- Project Cards Container -->
         <div class="card-container" id="projectsContainer">
         </div>
+        <!-- End of project Cards Container -->
     </div>
+    <!-- End of projects page container -->
+
+    <!-- Page footer -->
     <footer class="page-footer padding">
         <h3 class='title padding-vertical'>Contact Me</h3>
         <p>Email me at sarah.jules.thorne@gmail.com</p>
         <p class='padding'>Check out my Github <a href="www.github.com/sarahjulesthorne">here</a>!</p>
     </footer>
+    <!-- End of footer -->
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
     </script>

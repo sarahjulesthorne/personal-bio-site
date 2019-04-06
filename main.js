@@ -1,4 +1,10 @@
-//console.log(`Hey there`);
+/*Projects loads array of cards to page on page load and attaches event listeners to nav links, also on page load
+Cards are built using a createProjectCards function which builds cards using data from projects array and prints them using printToDom function
+Event listener calls three functions, one for each nav link
+Each function removes the class of hide from the attached page and adds it to the others */
+
+
+//array of example projects
 const projects = [{
         title: 'HTML project',
         screenshot: './images/2019-03-12.png',
@@ -37,14 +43,13 @@ const projects = [{
     },
 ];
 
+//print function which selects an element by its id and sets the inner HTML to the designated variable's value
 const printToDom = (divId, textToPrint) => {
     const selectedDiv = document.getElementById(divId);
     selectedDiv.innerHTML = textToPrint;
 };
-// console.log(projects[1].title);
-// console.log(projects[3].url);
-// printToDom('projectsPage',  '<p>Hi?</p>');
 
+//domStringBuilder function which uses a for loop to iterate over the projects array, builds the selected values into an HTML card, and prints the final array of cards to the dom
 const createProjectCards = () => {
     let domString = '';
     for (let i = 0; i < projects.length; i++) {
@@ -63,7 +68,41 @@ const createProjectCards = () => {
     }
     printToDom('projectsContainer', domString);
 };
+
+//function which removes the class of hide from the bioPage and adds it to the other two pages
+const bioNavDisplay = (event) => {
+    event.preventDefault;
+    document.getElementById('bioPage').classList.remove('hide');
+    document.getElementById('technologiesPage').classList.add('hide');
+    document.getElementById('projectsPage').classList.add('hide');
+};
+
+//function which removes the class of hide from the technologies page and adds it to the other pages
+const technologiesNavDisplay = () => {
+    event.preventDefault;
+    document.getElementById('technologiesPage').classList.remove('hide');
+    document.getElementById('bioPage').classList.add('hide');
+    document.getElementById('projectsPage').classList.add('hide');
+};
+
+//function which removes the class of hide from the projects page and adds it to the other pages
+const projectsNavDisplay = (event) => {
+    event.preventDefault;
+    document.getElementById('projectsPage').classList.remove('hide');
+    document.getElementById('bioPage').classList.add('hide');
+    document.getElementById('technologiesPage').classList.add('hide');
+};
+
+//function attaches click event listeners to the three nav links
+const navEventListener = () => {
+    document.getElementById('navToBio').addEventListener('click', bioNavDisplay);
+    document.getElementById('navToTechnologies').addEventListener('click', technologiesNavDisplay);
+    document.getElementById('navToProjects').addEventListener('click', projectsNavDisplay);
+};
+
 const init = () => {
     createProjectCards();
+    navEventListener();
+    technologiesNavDisplay(fullPages);
 };
 init();
