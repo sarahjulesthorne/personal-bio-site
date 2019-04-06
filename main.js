@@ -1,4 +1,4 @@
-//console.log(`Hey there`);
+const navLinkClasses = ['bioPage', 'technologiesPage', 'projectsPage'];
 const projects = [{
         title: 'HTML project',
         screenshot: './images/2019-03-12.png',
@@ -63,7 +63,32 @@ const createProjectCards = () => {
     }
     printToDom('projectsContainer', domString);
 };
+
+const bioNavDisplay = (event) => {
+event.preventDefault;
+console.log(event.target.id);
+};
+
+const technologiesNavDisplay = (event) => {
+    event.preventDefault;
+console.log(event.target.id);
+    
+    };
+
+    const projectsNavDisplay = (event) => {
+        event.preventDefault;
+        console.log(event.target.id);
+        
+        };
+
+const navEventListener = () => {
+document.getElementById('navToBio').addEventListener('click', bioNavDisplay);
+document.getElementById('navToTechnologies').addEventListener('click', technologiesNavDisplay);
+document.getElementById('navToProjects').addEventListener('click', projectsNavDisplay);
+};
+
 const init = () => {
     createProjectCards();
+    navEventListener(navLinkClasses, 'fullPage');
 };
 init();
